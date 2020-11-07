@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="css/survey.css">
+	<script src="javascript/project.js"></script>
+</head>
+<body>
+<nav><marquee behaviour="alternate">SURVEY FORM</marquee></nav>
+<form action="thanks.html">
+<div class="main">
+	<div class="zone">
+		<fieldset>Choose your Zone:
+			<select required>
+				<option>Choose</option>
+				<option>Central Zone</option>
+				<option>Northern Zone</option>
+				<option>North Eastern Zone</option>
+				<option>North Western Zone</option>
+				<option>North Central Zone</option>
+				<option>Southern Zone</option>
+				<option>South Central Zone</option>
+				<option>South Eastern Zone</option>
+				<option>South Western Zone</option>
+			</select>
+			    &ensp;&ensp; No. of times a day do you eat:
+				<select required>
+					<option>Choose</option>
+					<option>1x</option>
+					<option>2x</option>
+					<option>3x</option>
+					<option>4x</option>
+					<option>5x</option>
+					<option>More</option>
+				</select>
+			&ensp;&ensp; Enter your BMI(Body Mass Index):<input type="text" name="BMI" required autocomplete="on" autofocus>
+		</fieldset></div>
+		<fieldset>
+			<legend><h3><b>What meal would you consider main meal of the day:</b></h3></legend>
+			<input type="radio" name="mmeal">Breakfast<br>
+			<input type="radio" name="mmeal">Lunch<br>
+			<input type="radio" name="mmeal">Dinner<br>
+		</fieldset>
+		<fieldset>
+			<legend><h3>What does your main meal consist and how is it prepared:</h3></legend>
+			<input type="radio" name="prepared">Freshly home-cooked<br>
+			<input type="radio" name="prepared">Resturant meal<br>
+			<input type="radio" name="prepared">Pre-cooked, Microwave or TV dinner<br>
+		</fieldset>
+		<fieldset>
+			<legend><h3>What percent of your regular diet consists of meat and meat products:</h3></legend>
+			<input type="radio" name="meatp">90% or more<br>
+			<input type="radio" name="meatp">75%<br>
+			<input type="radio" name="meatp">50%<br>
+			<input type="radio" name="meatp">25%<br>
+			<input type="radio" name="meatp">Less than 25%<br>
+		</fieldset>
+		<fieldset>
+			<legend><h3>What percent of your regular diet consists of vegetable and fruit products:</h3></legend>
+			<input type="radio" name="meatp">90% or more<br>
+			<input type="radio" name="meatp">75%<br>
+			<input type="radio" name="meatp">50%<br>
+			<input type="radio" name="meatp">25%<br>
+			<input type="radio" name="meatp">Less than 25%<br>
+		</fieldset>
+		<fieldset>
+			<legend><h3>What kind of food you like:</h3></legend>
+			<input type="radio" name="kind">Sweet<br>
+			<input type="radio" name="kind">Salty<br>
+			<input type="radio" name="kind">Sour<br>
+			<input type="radio" name="kind">Spicy<br>
+		</fieldset>
+		<fieldset>
+			<legend><h3>Do you have any kind of food allergy:</h3></legend>
+			<input type="radio" name="allergy">Yes<br>
+			<input type="radio" name="allergy">No<br>
+			If yes, please state about your allergy:<br>
+			<textarea rows="3" cols="100">
+				
+			</textarea>
+		</fieldset>
+		<h3>Click on the button to submit your responses</h3>
+		<button onclick="survey()" id="surveysubmit">Submit</button>
+
+</div></form>
+</body>
+</html>

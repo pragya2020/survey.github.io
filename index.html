@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="css/project.css">
+	<script src="javascript/project.js"></script>
+</head>
+<body>
+<nav class="nav"><h1 style="margin-top:20px;">Eating and Dietary Habits Survey</h1></nav>
+<div class="point">
+	<marquee direction="up" width="100%" height="30px" scrollamount="2">
+	<h2>Welcome to Eating and Dietary Habits Survey</h2>
+	<h2>Your participation is valuable</h2>
+	<h2>Help us to improve our data</h2>
+	<h2>This survey is important for health research</h2></marquee></div>
+<div class="formborder">
+	<h1 class="registration" style="text-align: center"><b>Registration Form</b></h1>
+	<form class="form" action="htmlfile/survey.html" target="_self" method="post" autocomplete="on">
+						
+		                <label>Username:<input type="text" id="name" name="username" required autofocus><br><br></label>
+	                    <label >Date of Birth:<input type="date" id="dob" name="birthdate" required autofocus><br><br></label>
+	                     <label>Email:<input type="email" id="email" name="email" required placeholder="xyz@gmail.com" autofocus="on"><br><br></label>
+	                    <label>Password:<input type="password" id="word" onblur="pasword()" name="password" required autofocus >
+	                   </label><span id="pass"></span><br><br>
+	                
+	                <input type="checkbox" name="condition"  required autofocus><span>I Agree to share my data </span><br><br>
+	                <button class="button" >NEXT</button>
+	                </form>
+	            </div>
+
+
+
+
+</body>
+</html>
